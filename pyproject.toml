@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "atividade-ia"
+version = "0.1.0"
+description = ""
+authors = ["Gutto <guttolaudie@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+polars = "^1.7.1"
+seaborn = "^0.13.2"
+pyarrow = "^17.0.0"
+plotly = "^5.24.1"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.jupyter-notebook.dependencies]
+jupyter = "^1.1.1"
+notebook = "^7.2.2"
+ipykernel = "^6.29.5"
+
+
+[tool.poetry.group.ml_steps.dependencies]
+optuna = "^4.0.0"
+scikit-learn = "^1.5.2"
+lightgbm = "^4.5.0"
+xgboost = "^2.1.1"
+catboost = "^1.2.7"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^5.0.0"
+pytest = "^8.3.3"
+ruff = "^0.6.4"
+taskipy = "^1.13.0"
+mypy = "^1.11.2"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.34"
+mkdocstrings = "^0.26.1"
+mkdocstrings-python = "^1.11.1"
+mkdocs-mermaid2-plugin = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
